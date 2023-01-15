@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import AboutPage from '../src/components/AboutPage';
+import ContactPage from '../src/components/ContactPage';
+import WorkPage from '../src/components/WorkPage';
+import NavBar from '../src/components/NavBar';
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         >
           Learn React
         </a>
+        <NavBar />
+        <ContactPage />
+        <WorkPage />
+        <AboutPage />
       </header>
     </div>
   );
