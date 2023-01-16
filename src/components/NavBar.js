@@ -5,8 +5,12 @@ const NavBar = () => {
     return (
         <div className='navbar'>
             <h1>NavBar Component</h1>
+            <Link className='home' to='/'>Home</Link>
+            <Link className='about' to='/about'>About</Link>
+            <Link className='contact' to='/contact'>Contact</Link>
+            <Link className='my-work' to='/mywork'>My Work</Link>
         </div>
     );
 };
 
-export default NavBar
+export default NavBar;
