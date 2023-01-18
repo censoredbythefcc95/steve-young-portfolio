@@ -5,18 +5,19 @@ import WorkPage from '../src/components/WorkPage';
 import NavBar from '../src/components/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
+// It seems that react-router-dom is now using element instead of component to render routes.
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route path="/" exact component={WorkPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/mywork" component={WorkPage} />
-          <Route path="/contact" component={ContactPage} /> 
-        </Routes>
-      </div>
+    <div>
+      <NavBar />
+      <Routes>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/mywork" element={<WorkPage />} />
+      </Routes>
+    </div>
     </BrowserRouter>
   );
 };
