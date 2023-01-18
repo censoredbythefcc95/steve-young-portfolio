@@ -18,7 +18,7 @@ code {
   right: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Helvetica Neue', sans-serif;
 }
@@ -29,6 +29,8 @@ code {
   padding: 0 20px;
 }
 
-.name {
-  justify-content: left;
+.navbar a.name {
+  margin-right: auto;
+  color: blue;
+  font-size: 24px;
 }
