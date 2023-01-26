@@ -7,14 +7,13 @@ const ContactPage = () => {
         email: '',
         message: ''
     });
-
+    
     const handleChange = (event) => {
         setFormData({
             ...formData,
             [event.target.name]: event.target.value
         });
     }
-
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(formData);
@@ -23,7 +22,7 @@ const ContactPage = () => {
 
     return (
         <div className='contact-page'>
-            <h1>Contact Me</h1>
+            <div className='contact-form'>
             <form onSubmit={handleSubmit}>
                 <label>
                     Name:
@@ -39,6 +38,7 @@ const ContactPage = () => {
                 </label>
                 <button type="submit">Send</button>
             </form>
+            </div>
             <Link to='/'>Go back home</Link>
         </div>
     );
